@@ -45,16 +45,18 @@ library/<category>/<slug>/
 
 Not every paper has `assets/` or `tables/` - only those whose source has something to extract.
 A paper's tags live in a `**Tags: ...**` line in the header of `document.md` and are mirrored in `metadata.json`.
+Every paper also gets a one-line "What it gives" entry in the tables below, stating what the work lets you compute or decide.
+The library is meant to grow to hundreds of papers, so those two columns are what relevance is judged from: the tables are read in full, the packages are not.
 Each paper sits in exactly one category, the one it is read for; neighbouring topics are found through tags rather than duplicated folders.
 
 ## Contents
 
 ### 1-signals
 
-| Paper | Year | Authors | Tags |
-| --- | --- | --- | --- |
-| [The price impact of order book events](1-signals/price-impact-ob-events-cont-kukanov-stoikov/document.md) | 2011 | Cont, Kukanov, Stoikov | PUBLIC-HL, L2, TRADES |
-| [The Micro-Price: A High Frequency Estimator of Future Prices](1-signals/microprice-stoikov/document.md) | 2018 | Stoikov | PUBLIC-HL, L2, BBO, SHORT-ALPHA |
+| Paper | Year | Authors | What it gives | Tags |
+| --- | --- | --- | --- | --- |
+| [The price impact of order book events](1-signals/price-impact-ob-events-cont-kukanov-stoikov/document.md) | 2011 | Cont, Kukanov, Stoikov | Short-horizon price change is linear in order flow imbalance at the best quotes, with a slope inversely proportional to depth | PUBLIC-HL, L2, TRADES |
+| [The Micro-Price: A High Frequency Estimator of Future Prices](1-signals/microprice-stoikov/document.md) | 2018 | Stoikov | Fair value as a mid-price adjustment driven by spread and best-level imbalance; estimated as a finite Markov chain | PUBLIC-HL, L2, BBO, SHORT-ALPHA |
 
 **The price impact of order book events.** Cont, Kukanov & Stoikov, March 2011 (arXiv:1011.6402v3). Using NYSE TAQ data for 50 US stocks, the paper shows that over short intervals prices are driven by order flow imbalance (OFI) at the best quotes rather than by trade volume. The relation between OFI and price change is linear, with a slope inversely proportional to market depth; it is robust to intraday seasonality and stable across time scales and across stocks. A scaling argument then recovers the empirical "square-root" law for volume.
 Package: `document.md`, `tables.md`, `metadata.json`, 15 figures in `assets/`, 6 tables in `tables/`.
@@ -64,10 +66,10 @@ Package: `document.md`, `metadata.json`, 5 figures in `assets/`. The paper has n
 
 ### 2-quoting
 
-| Paper | Year | Authors | Tags |
-| --- | --- | --- | --- |
-| [High-frequency trading in a limit order book](2-quoting/hft-limit-ob-avellaneda-stoikov/document.md) | 2006 | Avellaneda, Stoikov | EXEC, MARKET-MAKING |
-| [Dealing with the Inventory Risk](2-quoting/inventory-risk-gueant-lehalle-fernandez-tapia/document.md) | 2012 | Guéant, Lehalle, Fernandez-Tapia | EXEC, MARKET-MAKING, RISK |
+| Paper | Year | Authors | What it gives | Tags |
+| --- | --- | --- | --- | --- |
+| [High-frequency trading in a limit order book](2-quoting/hft-limit-ob-avellaneda-stoikov/document.md) | 2006 | Avellaneda, Stoikov | Optimal quotes as an inventory-dependent reservation price plus a spread, from volatility, risk aversion and order arrival intensity | EXEC, MARKET-MAKING |
+| [Dealing with the Inventory Risk](2-quoting/inventory-risk-gueant-lehalle-fernandez-tapia/document.md) | 2012 | Guéant, Lehalle, Fernandez-Tapia | The same quotes under an inventory limit, reduced to linear ODEs, with closed-form approximations, drift and market impact | EXEC, MARKET-MAKING, RISK |
 
 **High-frequency trading in a limit order book.** Avellaneda & Stoikov, October 2006. Optimal bid and ask quotes for a dealer facing inventory risk: the mid-price is a Brownian motion and market orders arrive as a Poisson process whose intensity decays with distance from the mid. The solution comes in two steps - an indifference price given current inventory, then calibration of the quotes to the order book. Simulations show markedly lower variance of P&L and of final inventory than symmetric quoting around the mid.
 Package: `document.md`, `metadata.json`, 4 figures in `assets/`. The paper's three simulation tables are Markdown tables inside `document.md`; there are no CSV tables.
