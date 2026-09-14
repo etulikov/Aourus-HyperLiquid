@@ -2,6 +2,12 @@
 
 This folder is a structured conversion of **Dealing with the Inventory Risk: A solution to the market making problem** by Olivier Guéant, Charles-Albert Lehalle and Joaquin Fernandez-Tapia (this draft: July 2012, arXiv:1105.3115v5).
 
+## What the paper gives
+
+The Avellaneda-Stoikov problem again, this time with an inventory limit and a proof. A change of variables turns the Hamilton-Jacobi-Bellman equation into a system of linear ODEs, so the optimal quotes come out of a matrix exponential instead of a numerical PDE solve, and a verification theorem establishes that the quotes are in fact optimal - which, the authors note, was not available for the unconstrained problem at the time.
+
+The paper then characterizes how the quotes behave far from the terminal time, where they settle into an asymptotic regime, and gives closed-form spectral approximations to that regime. Two extensions follow, a drift in the reference price and market impact / adverse selection, and the comparative statics are worked out in volatility, drift, intensity scale, risk aversion, intensity decay and the impact parameter. It closes with a one-day backtest on France Telecom against a naive market maker that simply posts at the first limit on each side.
+
 ## Files
 
 - `document.md` - main reading document: section hierarchy, cleaned prose, LaTeX equations, references and relative image references.
