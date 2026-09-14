@@ -1,0 +1,103 @@
+# Monorepo: Rust trading bots, Python research, TypeScript dashboard, Markdown library.
+
+# --- Secrets and credentials -------------------------------------------------
+# A trading bot holds keys that move real money. Nothing resembling one is
+# tracked; commit .example files instead and keep the real values out of git.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.keystore
+secrets.toml
+secrets.json
+credentials.json
+wallet*.json
+private_key*
+config.local.*
+*.local.toml
+
+# --- Rust --------------------------------------------------------------------
+target/
+**/*.rs.bk
+*.pdb
+# Cargo.lock is tracked on purpose: this repo ships binaries, not libraries,
+# and reproducible builds matter more than dependency flexibility.
+
+# --- Python ------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+.ipynb_checkpoints/
+htmlcov/
+.coverage
+.coverage.*
+.tox/
+.nox/
+
+# --- Node / TypeScript -------------------------------------------------------
+node_modules/
+.pnpm-store/
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+.npm/
+*.tsbuildinfo
+.vite/
+.turbo/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+# Build output of the dashboard; `dist/` above already covers Python builds.
+apps/**/dist/
+apps/**/build/
+
+# --- Market data and run artifacts -------------------------------------------
+# Raw feeds, backtest outputs and recorded order books are large and
+# reproducible, so they live outside git. Note that *.csv is deliberately NOT
+# ignored: the paper library tracks small CSV tables under library/.
+/data/
+**/data/raw/
+**/data/cache/
+*.parquet
+*.feather
+*.arrow
+*.h5
+*.hdf5
+*.duckdb
+*.sqlite
+*.sqlite3
+*.db
+logs/
+*.log
+flamegraph.svg
+perf.data*
+
+# --- OS and editors ----------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# --- Agent tooling -----------------------------------------------------------
+# .ai/rules/ is tracked; local agent state is not.
+.claude/settings.local.json
+.claude/local/

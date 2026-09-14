@@ -1,0 +1,58 @@
+# Monorepo: Rust trading bots, Python research, TypeScript dashboard, Markdown library.
+
+# --- Line endings ------------------------------------------------------------
+# Normalise to LF in the repository and in every working tree, so a Windows
+# checkout cannot turn a whole file into a diff.
+* text=auto eol=lf
+
+*.sh text eol=lf
+*.fish text eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# --- Language-aware diffs ----------------------------------------------------
+# Better hunk headers: git shows the enclosing function or heading.
+*.rs text diff=rust
+*.py text diff=python
+*.md text diff=markdown
+*.html text diff=html
+*.css text diff=css
+*.ts text diff=typescript
+*.tsx text diff=typescript
+
+# --- Generated files ---------------------------------------------------------
+# Kept in the repository for reproducible builds, but not worth reading in a
+# diff and not counted as hand-written code by GitHub.
+Cargo.lock linguist-generated=true -diff
+package-lock.json linguist-generated=true -diff
+pnpm-lock.yaml linguist-generated=true -diff
+yarn.lock linguist-generated=true -diff
+uv.lock linguist-generated=true -diff
+poetry.lock linguist-generated=true -diff
+
+# --- Binary assets -----------------------------------------------------------
+# Never diffed, never line-ending mangled.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.gz binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.parquet binary
+*.wasm binary
+
+# --- Repository language statistics ------------------------------------------
+# The paper library is documentation, not source: keep it out of the language
+# bar and out of diffs by default (`git diff -- library/` still works).
+library/** linguist-documentation=true
+*.ipynb linguist-documentation=true
+
+# --- Data --------------------------------------------------------------------
+# CSV tables in the library are small and reviewable, so they stay plain text.
+*.csv text eol=lf
