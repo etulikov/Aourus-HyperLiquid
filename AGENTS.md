@@ -1,7 +1,8 @@
 # Aourus HyperLiquid
 
-Инструкции для агентов, работающих в этом репозитории.
+Instructions for agents working in this repository.
 
-## Правила
+## Rules
 
 @.ai/rules/git.md
+@.ai/rules/docs.md

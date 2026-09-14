@@ -1,32 +1,32 @@
 # Git
 
-## Коммиты
+## Commits
 
-- **Один коммит на каждую законченную по смыслу задачу.** Задача доделана и проверена — сразу коммит, не дожидаясь конца сессии и не спрашивая разрешения.
-- Не смешивать в одном коммите несколько несвязанных задач. Если по ходу работы сделано два разных дела — два коммита.
-- Не оставлять сделанную работу незакоммиченной. К концу ответа рабочее дерево чистое, кроме того, что намеренно осталось в работе.
-- Незавершённое или сломанное не коммитить. «Законченная по смыслу» = результат самодостаточен: ссылки резолвятся, тесты проходят, структура консистентна.
+- **One commit per semantically complete task.** Once a task is done and verified, commit it immediately - do not wait for the end of the session and do not ask for permission.
+- Never mix unrelated tasks in one commit. Two separate pieces of work mean two commits.
+- Never leave finished work uncommitted. By the end of a reply the working tree is clean, apart from what is deliberately still in progress.
+- Never commit unfinished or broken work. "Semantically complete" means the result stands on its own: links resolve, tests pass, the structure is consistent.
 
-## Пуш
+## Pushing
 
-- **`git push` — только по явной команде.** Никогда не пушить по своей инициативе, даже если коммит очевидно готов, даже сразу после коммита, даже если пуш выглядит безобидным.
-- Разрешение на один пуш не распространяется на следующий: каждый пуш требует отдельной команды.
-- То же касается всего, что уходит наружу: PR, релизы, теги на remote, комментарии в GitHub.
+- **`git push` only on explicit request.** Never push on your own initiative - not when the commit is obviously ready, not right after committing, not when the push looks harmless.
+- Permission to push once does not carry over to the next push: every push needs its own explicit request.
+- The same applies to anything that leaves the machine: pull requests, releases, remote tags, GitHub comments.
 
-## Формат сообщения
+## Commit messages
 
-- Conventional Commits: `type(scope): описание`.
+- Conventional Commits: `type(scope): description`.
 - `type`: `feat`, `fix`, `docs`, `refactor`, `chore`, `test`.
-- `scope`: затронутая область, например `library`, `1-signals`, `rules`.
-- Описание — в повелительном наклонении, по-английски, строчными, без точки в конце.
-- В теле — что и зачем, если из заголовка не очевидно.
-- Трейлеры в конце каждого коммита:
+- `scope`: the area touched, for example `library`, `1-signals`, `rules`.
+- Description in the imperative mood, lower case, no trailing period.
+- Use the body to explain what and why when the subject line does not make it obvious.
+- Trailers at the end of every commit:
 
   ```
   Co-Authored-By: Claude Opus 5 (1M context) <noreply@anthropic.com>
-  Claude-Session: <ссылка на сессию>
+  Claude-Session: <session link>
   ```
 
-## Ветки
+## Branches
 
-- Работа идёт в `main`. Ветку заводить, только если об этом попросили.
+- Work happens on `main`. Create a branch only when asked to.
