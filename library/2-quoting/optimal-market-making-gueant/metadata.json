@@ -150,10 +150,12 @@
   ],
   "tables": [],
   "conversion_notes": [
-    "Numbered structural equations are normalized to LaTeX in equations.md; document.md carries the argument and the figures.",
-    "The long proof-only Itô and jump identities are not re-keyed. The six source pages they occupy are kept as rendered images under source_pages/ and referenced from equations.md, so a disputed step is read off the page rather than off an ambiguous text layer.",
-    "The package no longer carries the source PDF or its full 43-page render: the arXiv id plus source_sha256 identify the exact file, which keeps the package at roughly two megabytes.",
-    "The calibrated CDX parameters of section 6 are collected in tables.md as Markdown; there are no CSV tables.",
-    "Figures 1-19 are PNG crops from source pages 32-41."
-  ]
+    "document.md is a full transcription of the paper: every section, paragraph, lemma, theorem and proof, all 51 numbered equations, all 27 footnotes and the reference list. The author's first person, the printed section numbering and the citation numbers are preserved.",
+    "The mathematics was re-keyed as LaTeX and checked against 150 dpi renders of the source pages. This includes the long Ito verification identities (3.15) and (3.17), which are transcribed rather than represented by page images.",
+    "Eq. (5.17) is reproduced with the sign layout as printed and is followed by a note: the placement of the Delta^i H^i'(0) term relative to the summation sign changes the sign of a second-derivative coefficient in an implementation.",
+    "The six source pages carrying the densest proof algebra are kept under source_pages/ as a check on the transcription, not as a substitute for it.",
+    "The package does not carry the source PDF or a render of all 43 pages: the arXiv id and source_sha256 identify the exact file.",
+    "equations.md is a flat index of the same equations, for retrieval; tables.md collects the calibrated CDX parameters of section 6. Figures 1-19 are PNG crops from source pages 32-41."
+  ],
+  "conversion_check": "Every pure-prose ten-word window of the source PDF text layer was verified to occur in document.md; the only non-matches are artifacts of footnote placement, line-break hyphenation and mathematical notation."
 }

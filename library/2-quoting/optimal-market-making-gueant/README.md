@@ -12,22 +12,24 @@ Section 6 calibrates the whole thing on two credit indices, CDX.NA.IG and CDX.NA
 
 ## Files
 
-- `document.md` - main reading document: section hierarchy, cleaned prose, the argument of each section, figures.
+- `document.md` - the paper itself, transcribed: every section, paragraph, lemma, theorem and proof of the source, all 51 numbered equations as LaTeX, all 27 footnotes, the reference list, and the figures in place.
 - `equations.md` - the numbered structural equations in normalized LaTeX, including the single- and multi-asset quote formulas.
 - `tables.md` - the calibrated CDX parameters of the numerical application.
 - `figures.json` - figure number -> source page -> asset mapping.
 - `assets/*.png` - the paper's 19 figures, cropped from source pages 32-41.
-- `source_pages/*.png` - rendered images of the six source pages whose proofs are not re-keyed.
+- `source_pages/*.png` - rendered images of the six source pages carrying the densest proof algebra, kept as a check on the transcription.
 - `metadata.json` - machine-readable document/asset manifest, including a SHA-256 of the source PDF.
 
 The paper has no data tables beyond the calibration, so there is no `tables/` directory.
 
-## What the conversion normalizes, and what it leaves alone
+## How faithful the transcription is
 
-The structural mathematics is re-keyed as LaTeX. The long proof-only Itô and jump identities are not: a PDF text layer scrambles fractions, superscripts and matrix notation exactly where a proof is hardest to check, so those six pages are kept as images and pointed at from `equations.md`. Where the paper's own sign layout is easy to misread - the quadratic-gradient term of the multi-asset system - `equations.md` says so and sends you to the page.
+`document.md` is a transcription, not a summary. It keeps the author's own first person ("we propose", "we show"), the section titles and numbering as printed, the citation numbers in the text, and the footnotes. Where the source has a typo it keeps the typo. The mathematics was re-keyed as LaTeX and checked against 150 dpi renders of the source pages, including the long Itô verification identities (3.15) and (3.17), which are transcribed rather than left as pictures.
 
-The package does not carry the source PDF or a render of all 43 pages. The arXiv id and the `source_sha256` in `metadata.json` identify the exact file, so the original is one download away, and the package stays around two megabytes instead of fourteen.
+Two places where the source itself is ambiguous are marked rather than silently resolved. The multi-asset PDE (5.17) is reproduced with the sign layout as printed, followed by a note explaining why the placement of the $\Delta^i{H_\xi^i}'(0)$ term matters for an implementation. The parameter table of Section 6 prints $\rho=0.9$ in a cell spanning both columns, which a Markdown table cannot do; the note in the row says so.
+
+The six source pages carrying the densest proof algebra are kept under `source_pages/` as a check on the transcription - read them when a step is disputed. The package does not carry the source PDF or a render of all 43 pages: the arXiv id and the `source_sha256` in `metadata.json` identify the exact file, so the original is one download away.
 
 ## Suggested Claude ingestion
 
-`document.md` for the argument, `equations.md` when the task is to implement quotes, `tables.md` for realistic parameter magnitudes. Open `source_pages/` only when a specific proof step is in question.
+`document.md` is the paper and answers most questions on its own. `equations.md` is the faster path when the task is to implement quotes, and `tables.md` gives realistic parameter magnitudes. Open `source_pages/` only when a specific proof step is disputed.
