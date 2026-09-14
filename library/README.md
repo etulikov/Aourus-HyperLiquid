@@ -27,7 +27,7 @@ Papers are grouped by their role in the trading stack: signal -> quote -> risk -
 | Category | Scope | Papers |
 | --- | --- | --- |
 | [`1-signals/`](1-signals/) | What can be predicted from the data: fair value, short horizon, order flow impact | 2 |
-| [`2-quoting/`](2-quoting/) | How to turn a signal into bid/ask: spread, inventory, placement | 1 |
+| [`2-quoting/`](2-quoting/) | How to turn a signal into bid/ask: spread, inventory, placement | 2 |
 | [`3-risk/`](3-risk/) | Inventory risk, drawdown, tails, leverage, liquidation | - |
 | [`4-validation/`](4-validation/) | Overfitting, non-stationarity, honest cost estimates | - |
 | [`5-venue/`](5-venue/) | Hyperliquid specifics: perps, funding, liquidations, feeds, latency | - |
@@ -67,9 +67,13 @@ Package: `document.md`, `metadata.json`, 5 figures in `assets/`. The paper has n
 | Paper | Year | Authors | Tags |
 | --- | --- | --- | --- |
 | [High-frequency trading in a limit order book](2-quoting/hft-limit-ob-avellaneda-stoikov/document.md) | 2006 | Avellaneda, Stoikov | EXEC, MARKET-MAKING |
+| [Dealing with the Inventory Risk](2-quoting/inventory-risk-gueant-lehalle-fernandez-tapia/document.md) | 2012 | Guéant, Lehalle, Fernandez-Tapia | EXEC, MARKET-MAKING, RISK |
 
 **High-frequency trading in a limit order book.** Avellaneda & Stoikov, October 2006. Optimal bid and ask quotes for a dealer facing inventory risk: the mid-price is a Brownian motion and market orders arrive as a Poisson process whose intensity decays with distance from the mid. The solution comes in two steps - an indifference price given current inventory, then calibration of the quotes to the order book. Simulations show markedly lower variance of P&L and of final inventory than symmetric quoting around the mid.
 Package: `document.md`, `metadata.json`, 4 figures in `assets/`. The paper's three simulation tables are Markdown tables inside `document.md`; there are no CSV tables.
+
+**Dealing with the Inventory Risk.** Guéant, Lehalle & Fernandez-Tapia, July 2012 (arXiv:1105.3115v5). The Avellaneda-Stoikov problem revisited, this time with an inventory limit and a proof. A change of variables turns the HJB equation into a system of linear ODEs, so the optimal quotes follow from a matrix exponential instead of a numerical PDE solve, and a verification theorem is available. The paper then works out how the quotes behave far from the horizon and gives closed-form spectral approximations, extends the model to a price drift and to market impact / adverse selection, and reads off the comparative statics in sigma, mu, A, gamma, k and the impact parameter. It closes with a one-day backtest on France Telecom against a naive market maker that simply posts at the first limit.
+Package: `document.md`, `equations.md`, `appendix-proofs.md`, `figures.json`, `metadata.json`, 13 figures plus 12 rendered proof pages in `assets/`. The paper has no data tables.
 
 ### 3-risk, 4-validation, 5-venue
 

@@ -1,0 +1,161 @@
+{
+  "title": "Dealing with the Inventory Risk: A solution to the market making problem",
+  "authors": [
+    "Olivier Guéant",
+    "Charles-Albert Lehalle",
+    "Joaquin Fernandez-Tapia"
+  ],
+  "date": "2012-07",
+  "arxiv_id": "1105.3115v5",
+  "arxiv_category": "q-fin.TR",
+  "source_file": "1105.3115v5.pdf",
+  "source_pages": 36,
+  "source_sha256": "e3d8348e0a3ac0599d30ea56ac7420161979b74b0ddbb788d6800779366f6912",
+  "primary_markdown": "document.md",
+  "companion_markdown": [
+    "equations.md",
+    "appendix-proofs.md"
+  ],
+  "figure_manifest": "figures.json",
+  "equation_format": "LaTeX ($...$ inline; $$...$$ display)",
+  "tags": [
+    "EXEC",
+    "MARKET-MAKING",
+    "RISK"
+  ],
+  "assets": [
+    {
+      "path": "assets/figure-01-optimal-bid.png",
+      "source_page": 8,
+      "caption": "Behavior of the optimal bid quotes with time and inventory"
+    },
+    {
+      "path": "assets/figure-02-optimal-ask.png",
+      "source_page": 9,
+      "caption": "Behavior of the optimal ask quotes with time and inventory"
+    },
+    {
+      "path": "assets/figure-03-optimal-spread.png",
+      "source_page": 9,
+      "caption": "Behavior of the resulting bid-ask spread with time and inventory"
+    },
+    {
+      "path": "assets/figure-04-bid-asymptotic-approx.png",
+      "source_page": 11,
+      "caption": "Asymptotic behavior of optimal bid quote (bold line) and approximation (dotted line)"
+    },
+    {
+      "path": "assets/figure-05-ask-asymptotic-approx.png",
+      "source_page": 12,
+      "caption": "Asymptotic behavior of optimal ask quote (bold line) and approximation (dotted line)"
+    },
+    {
+      "path": "assets/figure-06-spread-vs-gamma-case1.png",
+      "source_page": 17,
+      "caption": "Bid-ask spread from asymptotic optimal quotes for different inventories and risk-aversion values"
+    },
+    {
+      "path": "assets/figure-07-spread-vs-gamma-case2.png",
+      "source_page": 18,
+      "caption": "Bid-ask spread from asymptotic optimal quotes for a second parameter set"
+    },
+    {
+      "path": "assets/figure-08-bid-vs-k.png",
+      "source_page": 19,
+      "caption": "Asymptotic optimal bid quotes for different inventories and values of k"
+    },
+    {
+      "path": "assets/figure-09-france-telecom-price.png",
+      "source_page": 21,
+      "caption": "France Telecom price on 15/03/2012, 10:00-16:00"
+    },
+    {
+      "path": "assets/figure-10-inventory.png",
+      "source_page": 21,
+      "caption": "Inventory in ATS for the strategy on France Telecom"
+    },
+    {
+      "path": "assets/figure-11-pnl-strategy.png",
+      "source_page": 22,
+      "caption": "P&L for the model-based strategy on France Telecom"
+    },
+    {
+      "path": "assets/figure-12-pnl-naive.png",
+      "source_page": 22,
+      "caption": "P&L of the naive market maker on France Telecom"
+    },
+    {
+      "path": "assets/figure-13-quotes-trades.png",
+      "source_page": 23,
+      "caption": "Detailed market and market-maker quotes/trades for France Telecom"
+    },
+    {
+      "path": "assets/proof-pages/page-25.png",
+      "source_page": 25,
+      "caption": "Rendered source page 25 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-26.png",
+      "source_page": 26,
+      "caption": "Rendered source page 26 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-27.png",
+      "source_page": 27,
+      "caption": "Rendered source page 27 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-28.png",
+      "source_page": 28,
+      "caption": "Rendered source page 28 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-29.png",
+      "source_page": 29,
+      "caption": "Rendered source page 29 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-30.png",
+      "source_page": 30,
+      "caption": "Rendered source page 30 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-31.png",
+      "source_page": 31,
+      "caption": "Rendered source page 31 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-32.png",
+      "source_page": 32,
+      "caption": "Rendered source page 32 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-33.png",
+      "source_page": 33,
+      "caption": "Rendered source page 33 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-34.png",
+      "source_page": 34,
+      "caption": "Rendered source page 34 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-35.png",
+      "source_page": 35,
+      "caption": "Rendered source page 35 of the proof appendix"
+    },
+    {
+      "path": "assets/proof-pages/page-36.png",
+      "source_page": 36,
+      "caption": "Rendered source page 36 of the proof appendix"
+    }
+  ],
+  "tables": [],
+  "conversion_notes": [
+    "The main paper is normalized: hyphenation across line breaks, running headers and page numbers are removed, and the equations are transcribed into standard LaTeX while keeping the paper's own symbols.",
+    "The tridiagonal matrices printed in the PDF are given componentwise, by their diagonal and off-diagonal entries, which is equivalent and easier to implement from.",
+    "The proof appendix (source pages 25-36) is not normalized. appendix-proofs.md keeps the fixed-width PDF text and pairs every page with its rendered image, so a dense intermediate step can be checked against the source instead of being silently rewritten.",
+    "equations.md is a flat index of the model and quote formulas, meant for retrieval rather than reading.",
+    "The backtest section is kept conservative: the paper illustrates the model on one day of France Telecom data and does not disclose the production algorithm, and the conversion does not fill in the gap."
+  ]
+}

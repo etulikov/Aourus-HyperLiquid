@@ -1,0 +1,80 @@
+[
+  {
+    "figure": 1,
+    "source_page": 8,
+    "file": "assets/figure-01-optimal-bid.png",
+    "caption": "Behavior of the optimal bid quotes with time and inventory."
+  },
+  {
+    "figure": 2,
+    "source_page": 9,
+    "file": "assets/figure-02-optimal-ask.png",
+    "caption": "Behavior of the optimal ask quotes with time and inventory."
+  },
+  {
+    "figure": 3,
+    "source_page": 9,
+    "file": "assets/figure-03-optimal-spread.png",
+    "caption": "Behavior of the resulting bid-ask spread with time and inventory."
+  },
+  {
+    "figure": 4,
+    "source_page": 11,
+    "file": "assets/figure-04-bid-asymptotic-approx.png",
+    "caption": "Asymptotic behavior of optimal bid quote (bold line) and approximation (dotted line)."
+  },
+  {
+    "figure": 5,
+    "source_page": 12,
+    "file": "assets/figure-05-ask-asymptotic-approx.png",
+    "caption": "Asymptotic behavior of optimal ask quote (bold line) and approximation (dotted line)."
+  },
+  {
+    "figure": 6,
+    "source_page": 17,
+    "file": "assets/figure-06-spread-vs-gamma-case1.png",
+    "caption": "Bid-ask spread from asymptotic optimal quotes for different inventories and risk-aversion values."
+  },
+  {
+    "figure": 7,
+    "source_page": 18,
+    "file": "assets/figure-07-spread-vs-gamma-case2.png",
+    "caption": "Bid-ask spread from asymptotic optimal quotes for a second parameter set."
+  },
+  {
+    "figure": 8,
+    "source_page": 19,
+    "file": "assets/figure-08-bid-vs-k.png",
+    "caption": "Asymptotic optimal bid quotes for different inventories and values of k."
+  },
+  {
+    "figure": 9,
+    "source_page": 21,
+    "file": "assets/figure-09-france-telecom-price.png",
+    "caption": "France Telecom price on 15/03/2012, 10:00-16:00."
+  },
+  {
+    "figure": 10,
+    "source_page": 21,
+    "file": "assets/figure-10-inventory.png",
+    "caption": "Inventory in ATS for the strategy on France Telecom."
+  },
+  {
+    "figure": 11,
+    "source_page": 22,
+    "file": "assets/figure-11-pnl-strategy.png",
+    "caption": "P&L for the model-based strategy on France Telecom."
+  },
+  {
+    "figure": 12,
+    "source_page": 22,
+    "file": "assets/figure-12-pnl-naive.png",
+    "caption": "P&L of the naive market maker on France Telecom."
+  },
+  {
+    "figure": 13,
+    "source_page": 23,
+    "file": "assets/figure-13-quotes-trades.png",
+    "caption": "Detailed market and market-maker quotes/trades for France Telecom."
+  }
+]
