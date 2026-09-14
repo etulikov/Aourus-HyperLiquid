@@ -1,0 +1,23 @@
+{
+  "title": "High-frequency trading in a limit order book",
+  "authors": ["Marco Avellaneda", "Sasha Stoikov"],
+  "date": "2006-10-05",
+  "source_file": "LimitOrderBook.pdf",
+  "source_pages": 14,
+  "primary_markdown": "document.md",
+  "equation_format": "LaTeX ($...$ inline; $$...$$ display)",
+  "tags": ["EXEC", "MARKET-MAKING"],
+  "assets": [
+    {"path": "assets/figure-01-optimal-quotes.png", "source_page": 11, "caption": "The mid-price, indifference price and the optimal bid and ask quotes"},
+    {"path": "assets/figure-02-pnl-gamma-0.1.png", "source_page": 12, "caption": "P&L histogram, gamma = 0.1"},
+    {"path": "assets/figure-03-pnl-gamma-0.01.png", "source_page": 13, "caption": "P&L histogram, gamma = 0.01"},
+    {"path": "assets/figure-04-pnl-gamma-0.5.png", "source_page": 13, "caption": "P&L histogram, gamma = 0.5"}
+  ],
+  "tables": [],
+  "conversion_notes": [
+    "Equations are LaTeX transcriptions of the expressions printed in the PDF.",
+    "The Appendix value-function expression is preserved exactly as printed, including its plus sign before the variance term.",
+    "Charts are image crops from 300 dpi renders; captions are represented as Markdown text.",
+    "The paper's three simulation tables are represented as Markdown tables rather than raster images; the paper contains no other tabular material."
+  ]
+}

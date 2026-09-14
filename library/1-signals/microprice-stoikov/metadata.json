@@ -1,0 +1,75 @@
+{
+  "title": "The Micro-Price: A High Frequency Estimator of Future Prices",
+  "authors": [
+    "Sasha Stoikov"
+  ],
+  "date": "2018-04-18",
+  "source_file": "ssrn_id3165260_code1121907.pdf",
+  "source_pages": 14,
+  "primary_markdown": "document.md",
+  "equation_format": "LaTeX ($...$ inline; $$...$$ display)",
+  "tags": [
+    "PUBLIC-HL",
+    "L2",
+    "BBO",
+    "SHORT-ALPHA"
+  ],
+  "keywords": [
+    "Market Microstructure",
+    "High-Frequency Trading",
+    "Micro-Price",
+    "Short Term Price Prediction",
+    "Limit Order Book",
+    "Liquidity"
+  ],
+  "jel_classification": "G10",
+  "sections": [
+    "1. Introduction",
+    "2. General Framework",
+    "3. Finite state space example",
+    "4. Data analysis",
+    "5. Conclusions",
+    "References",
+    "Appendix A: Mid-price example",
+    "Appendix B: Weighted mid-price example"
+  ],
+  "assets": [
+    {
+      "path": "assets/figure-01-imbalance-volume.png",
+      "source_page": 3,
+      "caption": "Buy and sell volume conditional on (pre-trade) imbalance. The spread is equal to the tick size (1 tick) for each asset.",
+      "figure": 1
+    },
+    {
+      "path": "assets/figure-02-spread-histograms.png",
+      "source_page": 9,
+      "caption": "Spread histograms for BAC and CVX. BAC is a typical large tick stock and CVX is a typical small tick stock.",
+      "figure": 2
+    },
+    {
+      "path": "assets/figure-03-microprice-adjustments.png",
+      "source_page": 10,
+      "caption": "G* = P^micro - M for BAC and CVX.",
+      "figure": 3
+    },
+    {
+      "path": "assets/figure-04-bac-empirical.png",
+      "source_page": 11,
+      "caption": "G* = P_t^micro - M_t versus empirical price changes for BAC at 1 minute and 3 minute horizons.",
+      "figure": 4
+    },
+    {
+      "path": "assets/figure-05-cvx-empirical.png",
+      "source_page": 11,
+      "caption": "G* = P_t^micro - M_t versus 10 second empirical price changes for CVX.",
+      "figure": 5
+    }
+  ],
+  "tables": [],
+  "conversion_notes": [
+    "Equations are LaTeX transcriptions of the expressions printed in the PDF; equation numbers are preserved with \\tag{...} where present.",
+    "The conversion is source-faithful rather than mathematically normalized; apparent source inconsistencies are preserved as printed (see README.md).",
+    "Figures are kept as raster crops because their axes, legends and multi-panel layout are more reliable as images than as extracted text.",
+    "PDF line-wrap artifacts, repeated page headers/footers, page numbers and the SSRN footer were removed."
+  ]
+}

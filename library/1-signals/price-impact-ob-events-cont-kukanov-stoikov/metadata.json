@@ -1,0 +1,128 @@
+{
+  "title": "The price impact of order book events",
+  "authors": [
+    "Rama Cont",
+    "Arseniy Kukanov",
+    "Sasha Stoikov"
+  ],
+  "date": "March 2011",
+  "arxiv_id": "1011.6402v3",
+  "source_pdf": "1011.6402v3.pdf",
+  "pages": 26,
+  "primary_markdown": "document.md",
+  "tables_markdown": "tables.md",
+  "equation_format": "LaTeX ($...$ inline; $$...$$ display)",
+  "assets": [
+    {
+      "path": "assets/figure-01-acf.png",
+      "type": "image/png",
+      "bytes": 54378
+    },
+    {
+      "path": "assets/figure-02-ofi-scatter.png",
+      "type": "image/png",
+      "bytes": 23052
+    },
+    {
+      "path": "assets/figure-03-residual-kurtosis.png",
+      "type": "image/png",
+      "bytes": 14762
+    },
+    {
+      "path": "assets/figure-04-impact-vs-depth.png",
+      "type": "image/png",
+      "bytes": 85259
+    },
+    {
+      "path": "assets/figure-05-intraday-impact-depth.png",
+      "type": "image/png",
+      "bytes": 82815
+    },
+    {
+      "path": "assets/figure-06-intraday-seasonality.png",
+      "type": "image/png",
+      "bytes": 121112
+    },
+    {
+      "path": "assets/level-i-order-book.png",
+      "type": "image/png",
+      "bytes": 20372
+    },
+    {
+      "path": "assets/stylized-order-book-cancel-buy.png",
+      "type": "image/png",
+      "bytes": 23015
+    },
+    {
+      "path": "assets/stylized-order-book-limit-buy.png",
+      "type": "image/png",
+      "bytes": 20044
+    },
+    {
+      "path": "assets/stylized-order-book-market-sell.png",
+      "type": "image/png",
+      "bytes": 17378
+    },
+    {
+      "path": "assets/table-01-preview.png",
+      "type": "image/png",
+      "bytes": 495249
+    },
+    {
+      "path": "assets/table-02-preview.png",
+      "type": "image/png",
+      "bytes": 517173
+    },
+    {
+      "path": "assets/table-03-preview.png",
+      "type": "image/png",
+      "bytes": 444546
+    },
+    {
+      "path": "assets/table-04-preview.png",
+      "type": "image/png",
+      "bytes": 579403
+    },
+    {
+      "path": "assets/table-05-preview.png",
+      "type": "image/png",
+      "bytes": 587693
+    }
+  ],
+  "tables": [
+    {
+      "path": "tables/table-01-descriptive-statistics.csv",
+      "type": "text/csv",
+      "bytes": 2737
+    },
+    {
+      "path": "tables/table-02-price-change-vs-ofi.csv",
+      "type": "text/csv",
+      "bytes": 3205
+    },
+    {
+      "path": "tables/table-03-impact-coefficient-vs-depth.csv",
+      "type": "text/csv",
+      "bytes": 3174
+    },
+    {
+      "path": "tables/table-04a-ofi-vs-trade-imbalance-midprices.csv",
+      "type": "text/csv",
+      "bytes": 3580
+    },
+    {
+      "path": "tables/table-04b-ofi-vs-trade-imbalance-transaction-prices.csv",
+      "type": "text/csv",
+      "bytes": 413
+    },
+    {
+      "path": "tables/table-05-volume-vs-ofi.csv",
+      "type": "text/csv",
+      "bytes": 3869
+    }
+  ],
+  "notes": [
+    "Large empirical tables are preserved in both Markdown and CSV.",
+    "Figures and diagrams are extracted as PNG files with relative paths from document.md."
+  ]
+}

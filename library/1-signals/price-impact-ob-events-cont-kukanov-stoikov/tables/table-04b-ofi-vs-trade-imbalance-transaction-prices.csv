@@ -1,0 +1,4 @@
+Ticker,OFI_R^2,OFI_t(beta_hat),OFI_beta!=0 (%),OFI_F,TI_R^2,TI_t(beta_T_hat),TI_beta_T!=0 (%),TI_F,Both_R^2,Both_t(theta_O_hat),Both_t(theta_T_hat),Both_theta_O!=0 (%),Both_theta_T!=0 (%),Both_F
+L=2trades,14%,15.74,98%,464,1%,2.69,63%,26,15%,14.17,-2.58,98%,54%,245
+L=5trades,38%,19.42,98%,753,8%,4.50,75%,113,39%,16.85,-0.20,98%,9%,379
+L=10trades,51%,17.78,98%,655,13%,4.55,75%,100,51%,14.97,0.57,98%,9%,329
