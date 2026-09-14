@@ -1,0 +1,21 @@
+[
+  {"figure":1,"page":32,"file":"assets/figure-01.png","caption":"Convergence of the IG bid quote in Model A for the different values of q^IG."},
+  {"figure":2,"page":32,"file":"assets/figure-02.png","caption":"IG bid quote at time 0: numerical values and closed-form approximation from Eq. (4.6)."},
+  {"figure":3,"page":33,"file":"assets/figure-03.png","caption":"IG ask quote at time 0: numerical values and closed-form approximation from Eq. (4.7)."},
+  {"figure":4,"page":33,"file":"assets/figure-04.png","caption":"IG bid-ask spread: numerical values and approximation from Eq. (4.8)."},
+  {"figure":5,"page":34,"file":"assets/figure-05.png","caption":"IG skew: numerical values and approximation from Eq. (4.9)."},
+  {"figure":6,"page":34,"file":"assets/figure-06.png","caption":"IG bid quote and approximation when IG volatility is reduced by half."},
+  {"figure":7,"page":35,"file":"assets/figure-07.png","caption":"IG ask quote and approximation when IG volatility is reduced by half."},
+  {"figure":8,"page":35,"file":"assets/figure-08.png","caption":"IG bid quote in Model A (crosses) and Model B (circles)."},
+  {"figure":9,"page":36,"file":"assets/figure-09.png","caption":"IG ask quote in Model A (crosses) and Model B (circles)."},
+  {"figure":10,"page":36,"file":"assets/figure-10.png","caption":"Convergence of the HY bid quote in Model A for the different values of q^HY."},
+  {"figure":11,"page":37,"file":"assets/figure-11.png","caption":"HY bid quote at time 0: numerical values and closed-form approximation from Eq. (4.6)."},
+  {"figure":12,"page":37,"file":"assets/figure-12.png","caption":"HY ask quote at time 0: numerical values and closed-form approximation from Eq. (4.7)."},
+  {"figure":13,"page":38,"file":"assets/figure-13.png","caption":"HY bid-ask spread: numerical values and approximation from Eq. (4.8)."},
+  {"figure":14,"page":38,"file":"assets/figure-14.png","caption":"HY skew: numerical values and approximation from Eq. (4.9)."},
+  {"figure":15,"page":39,"file":"assets/figure-15.png","caption":"HY bid quote in Model A (crosses) and Model B (circles)."},
+  {"figure":16,"page":39,"file":"assets/figure-16.png","caption":"HY ask quote in Model A (crosses) and Model B (circles)."},
+  {"figure":17,"page":40,"file":"assets/figure-17.png","caption":"Multi-asset Model A: IG bid quote as a function of IG and HY inventories."},
+  {"figure":18,"page":40,"file":"assets/figure-18.png","caption":"Multi-asset Model A: HY bid quote as a function of IG and HY inventories."},
+  {"figure":19,"page":41,"file":"assets/figure-19.png","caption":"HY bid quote with q^HY=0 as a function of q^IG for rho in {0, 0.3, 0.6, 0.9}."}
+]

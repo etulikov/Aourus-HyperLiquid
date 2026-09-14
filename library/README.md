@@ -27,7 +27,7 @@ Papers are grouped by their role in the trading stack: signal -> quote -> risk -
 | Category | Scope | Papers |
 | --- | --- | --- |
 | [`1-signals/`](1-signals/) | What can be predicted from the data: fair value, short horizon, order flow impact | 2 |
-| [`2-quoting/`](2-quoting/) | How to turn a signal into bid/ask: spread, inventory, placement | 2 |
+| [`2-quoting/`](2-quoting/) | How to turn a signal into bid/ask: spread, inventory, placement | 3 |
 | [`3-risk/`](3-risk/) | Inventory risk, drawdown, tails, leverage, liquidation | - |
 | [`4-validation/`](4-validation/) | Overfitting, non-stationarity, honest cost estimates | - |
 | [`5-venue/`](5-venue/) | Hyperliquid specifics: perps, funding, liquidations, feeds, latency | - |
@@ -66,6 +66,7 @@ Each row says what the work lets you compute or decide. The paper's own summary 
 | --- | --- | --- | --- | --- |
 | [High-frequency trading in a limit order book](2-quoting/hft-limit-ob-avellaneda-stoikov/) | 2006 | Avellaneda, Stoikov | Optimal quotes as an inventory-dependent reservation price plus a spread, from volatility, risk aversion and order arrival intensity | EXEC, MARKET-MAKING |
 | [Dealing with the Inventory Risk](2-quoting/inventory-risk-gueant-lehalle-fernandez-tapia/) | 2012 | Guéant, Lehalle, Fernandez-Tapia | The same quotes under an inventory limit, reduced to linear ODEs, with closed-form approximations, drift and market impact | EXEC, MARKET-MAKING, RISK |
+| [Optimal market making](2-quoting/optimal-market-making-gueant/) | 2017 | Guéant | CARA utility and running inventory penalty unified into one ODE family; generalized GLFT closed-form quotes; several correlated assets | EXEC, MARKET-MAKING, RISK |
 
 ### 3-risk, 4-validation, 5-venue
 

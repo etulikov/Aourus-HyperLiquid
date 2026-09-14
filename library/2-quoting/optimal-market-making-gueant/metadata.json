@@ -1,0 +1,159 @@
+{
+  "title": "Optimal market making",
+  "authors": [
+    "Olivier Guéant"
+  ],
+  "date": "2017-05-06",
+  "arxiv_id": "1605.01862v5",
+  "arxiv_category": "q-fin.TR",
+  "source_file": "1605.01862v5.pdf",
+  "source_pages": 43,
+  "source_sha256": "fb61c0cbb5532f35b47aa3aac119e8feaadf9d5926d62619f50a2a7a87cf079e",
+  "primary_markdown": "document.md",
+  "companion_markdown": [
+    "equations.md",
+    "tables.md"
+  ],
+  "figure_manifest": "figures.json",
+  "equation_format": "LaTeX ($...$ inline; $$...$$ display)",
+  "tags": [
+    "EXEC",
+    "MARKET-MAKING",
+    "RISK"
+  ],
+  "assets": [
+    {
+      "path": "assets/figure-01.png",
+      "source_page": 32,
+      "caption": "Convergence of the IG bid quote in Model A for the different values of q^IG"
+    },
+    {
+      "path": "assets/figure-02.png",
+      "source_page": 32,
+      "caption": "IG bid quote at time 0: numerical values and closed-form approximation from Eq. (4.6)"
+    },
+    {
+      "path": "assets/figure-03.png",
+      "source_page": 33,
+      "caption": "IG ask quote at time 0: numerical values and closed-form approximation from Eq. (4.7)"
+    },
+    {
+      "path": "assets/figure-04.png",
+      "source_page": 33,
+      "caption": "IG bid-ask spread: numerical values and approximation from Eq. (4.8)"
+    },
+    {
+      "path": "assets/figure-05.png",
+      "source_page": 34,
+      "caption": "IG skew: numerical values and approximation from Eq. (4.9)"
+    },
+    {
+      "path": "assets/figure-06.png",
+      "source_page": 34,
+      "caption": "IG bid quote and approximation when IG volatility is reduced by half"
+    },
+    {
+      "path": "assets/figure-07.png",
+      "source_page": 35,
+      "caption": "IG ask quote and approximation when IG volatility is reduced by half"
+    },
+    {
+      "path": "assets/figure-08.png",
+      "source_page": 35,
+      "caption": "IG bid quote in Model A (crosses) and Model B (circles)"
+    },
+    {
+      "path": "assets/figure-09.png",
+      "source_page": 36,
+      "caption": "IG ask quote in Model A (crosses) and Model B (circles)"
+    },
+    {
+      "path": "assets/figure-10.png",
+      "source_page": 36,
+      "caption": "Convergence of the HY bid quote in Model A for the different values of q^HY"
+    },
+    {
+      "path": "assets/figure-11.png",
+      "source_page": 37,
+      "caption": "HY bid quote at time 0: numerical values and closed-form approximation from Eq. (4.6)"
+    },
+    {
+      "path": "assets/figure-12.png",
+      "source_page": 37,
+      "caption": "HY ask quote at time 0: numerical values and closed-form approximation from Eq. (4.7)"
+    },
+    {
+      "path": "assets/figure-13.png",
+      "source_page": 38,
+      "caption": "HY bid-ask spread: numerical values and approximation from Eq. (4.8)"
+    },
+    {
+      "path": "assets/figure-14.png",
+      "source_page": 38,
+      "caption": "HY skew: numerical values and approximation from Eq. (4.9)"
+    },
+    {
+      "path": "assets/figure-15.png",
+      "source_page": 39,
+      "caption": "HY bid quote in Model A (crosses) and Model B (circles)"
+    },
+    {
+      "path": "assets/figure-16.png",
+      "source_page": 39,
+      "caption": "HY ask quote in Model A (crosses) and Model B (circles)"
+    },
+    {
+      "path": "assets/figure-17.png",
+      "source_page": 40,
+      "caption": "Multi-asset Model A: IG bid quote as a function of IG and HY inventories"
+    },
+    {
+      "path": "assets/figure-18.png",
+      "source_page": 40,
+      "caption": "Multi-asset Model A: HY bid quote as a function of IG and HY inventories"
+    },
+    {
+      "path": "assets/figure-19.png",
+      "source_page": 41,
+      "caption": "HY bid quote with q^HY=0 as a function of q^IG for rho in {0, 0.3, 0.6, 0.9}"
+    },
+    {
+      "path": "source_pages/page-13.png",
+      "source_page": 13,
+      "caption": "Rendered source page 13 - Itô verification identity (3.15), part 1"
+    },
+    {
+      "path": "source_pages/page-14.png",
+      "source_page": 14,
+      "caption": "Rendered source page 14 - Itô verification identity (3.15), part 2"
+    },
+    {
+      "path": "source_pages/page-15.png",
+      "source_page": 15,
+      "caption": "Rendered source page 15 - Itô verification identity (3.15), part 3"
+    },
+    {
+      "path": "source_pages/page-16.png",
+      "source_page": 16,
+      "caption": "Rendered source page 16 - Itô verification identity (3.17), part 1"
+    },
+    {
+      "path": "source_pages/page-17.png",
+      "source_page": 17,
+      "caption": "Rendered source page 17 - Itô verification identity (3.17), part 2"
+    },
+    {
+      "path": "source_pages/page-29.png",
+      "source_page": 29,
+      "caption": "Rendered source page 29 - Multi-asset quadratic-gradient term, source layout of the sign convention"
+    }
+  ],
+  "tables": [],
+  "conversion_notes": [
+    "Numbered structural equations are normalized to LaTeX in equations.md; document.md carries the argument and the figures.",
+    "The long proof-only Itô and jump identities are not re-keyed. The six source pages they occupy are kept as rendered images under source_pages/ and referenced from equations.md, so a disputed step is read off the page rather than off an ambiguous text layer.",
+    "The package no longer carries the source PDF or its full 43-page render: the arXiv id plus source_sha256 identify the exact file, which keeps the package at roughly two megabytes.",
+    "The calibrated CDX parameters of section 6 are collected in tables.md as Markdown; there are no CSV tables.",
+    "Figures 1-19 are PNG crops from source pages 32-41."
+  ]
+}
