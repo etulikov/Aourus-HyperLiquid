@@ -1,5 +1,5 @@
 # 4. Validation
 
-Как не обмануть себя бэктестом: overfitting, множественное тестирование, нестационарность и смена режимов, оценка транзакционных издержек.
+How not to fool yourself with a backtest: overfitting, multiple testing, non-stationarity and regime shifts, honest transaction cost estimates.
 
-_Пока пусто._
+_Empty for now._

@@ -1,5 +1,5 @@
 # 1. Signals
 
-Что можно предсказать по публичным данным: fair value, краткосрочное направление цены, импакт входящего потока ордеров. Работы этой категории отвечают на вопрос «куда поедет цена и почему», но не на вопрос «какую котировку выставить».
+What can be predicted from the data: fair value, short-horizon price direction, the impact of incoming order flow. Papers in this category answer "where is the price going, and why", not "what quote should I post".
 
-Сюда же — модели потока ордеров (Hawkes, OFI), микроцена и прочие оценки справедливой цены, метрики adverse selection как предиктора.
+This is also the home of order flow models (Hawkes, OFI), fair-price estimators such as the micro-price, and adverse selection measured as a predictor.

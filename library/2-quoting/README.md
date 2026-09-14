@@ -1,3 +1,3 @@
 # 2. Quoting
 
-Как превратить сигнал в конкретные bid/ask: оптимальный спред, управление инвентарём, skew котировок, placement лимиток, отмены и перевыставление.
+How to turn a signal into actual bid and ask quotes: optimal spread, inventory management, quote skew, limit order placement, cancellation and requoting.

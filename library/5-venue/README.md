@@ -1,5 +1,5 @@
 # 5. Venue
 
-Специфика конкретной площадки, в первую очередь Hyperliquid: механика perpetuals, funding, basis, ликвидации, устройство фидов и матчинга, латентность.
+Venue-specific mechanics, Hyperliquid first of all: perpetuals, funding, basis, liquidations, feed and matching engine behaviour, latency.
 
-_Пока пусто._
+_Empty for now._
