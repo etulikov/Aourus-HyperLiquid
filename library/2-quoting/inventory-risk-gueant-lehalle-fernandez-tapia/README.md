@@ -10,23 +10,22 @@ The paper then characterizes how the quotes behave far from the terminal time, w
 
 ## Files
 
-- `document.md` - main reading document: section hierarchy, cleaned prose, LaTeX equations, references and relative image references.
+- `document.md` - the paper itself, transcribed: every section, paragraph, proposition, theorem and proof - the appendix included - with the equations as LaTeX, all 13 footnotes, the reference list, and the figures in place.
 - `equations.md` - flat index of the model and quote formulas, for retrieval and for writing code from, rather than for reading.
-- `appendix-proofs.md` - the proof appendix of the paper, source pages 25-36.
 - `figures.json` - figure number -> source page -> asset mapping.
-- `assets/*.png` - the paper's 13 figures, plus rendered images of proof pages 25-36 under `assets/proof-pages/`.
+- `assets/*.png` - the paper's 13 figures, plus rendered images of source pages 25-36 under `assets/proof-pages/`, kept as a check on the transcribed appendix.
 - `metadata.json` - machine-readable document/asset manifest, including the source page of each figure and a SHA-256 of the source PDF.
 
 The paper has no data tables, so there is no `tables/` directory.
 
-## What the conversion normalizes, and what it leaves alone
+## How faithful the transcription is
 
-The main paper is normalized. Hyphenation across line breaks, running headers and page numbers are gone, and the equations are transcribed into standard LaTeX keeping the paper's own symbols. The tridiagonal matrices printed in the PDF are given componentwise, by their diagonal and off-diagonal entries: this is mathematically the same object and is what an implementation actually needs.
+`document.md` is a transcription, not a summary. It keeps the authors' own first person ("we consider", "we show"), the section titles and numbering as printed, the citation numbers in the text, and the footnotes. Hyphenation across line breaks, running headers and page numbers are removed; nothing else is.
 
-The proof appendix is deliberately not normalized. Its algebra is dense enough that an automatic reconstruction would be a guess, so `appendix-proofs.md` keeps the fixed-width text extracted from the PDF and puts the rendered source page next to it. When an intermediate step matters, read it off the image rather than trusting the text layer.
+The proof appendix, source pages 25-36, is transcribed in full rather than left as page images - the earlier conversion kept it as fixed-width text on the grounds that re-keying would be a guess, but every step was checked here against 150 dpi renders. The tridiagonal matrices are written out as matrices, as printed. The rendered source pages stay under `assets/proof-pages/` so a disputed step can be read off the original.
 
-The backtest section is kept conservative. The paper illustrates the model on a single day of France Telecom data and explicitly does not disclose the algorithm that was in production; the conversion does not fill that gap.
+The backtest section is the paper's own: it illustrates the model on a single day of France Telecom data and says explicitly that the production algorithm is not disclosed.
 
 ## Suggested Claude ingestion
 
-Use `document.md` as the primary context file and keep `assets/` next to it so the relative image paths resolve. Pull in `equations.md` when the task is to implement the quotes, and `appendix-proofs.md` only when a proof step is actually in question - it is long and mostly raw.
+Use `document.md` as the primary context file and keep `assets/` next to it so the relative image paths resolve. Pull in `equations.md` when the task is to implement the quotes - it is the same mathematics as a flat index. Open `assets/proof-pages/` only when a proof step in the appendix is actually in question.

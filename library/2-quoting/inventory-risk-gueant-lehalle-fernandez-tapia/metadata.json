@@ -13,8 +13,7 @@
   "source_sha256": "e3d8348e0a3ac0599d30ea56ac7420161979b74b0ddbb788d6800779366f6912",
   "primary_markdown": "document.md",
   "companion_markdown": [
-    "equations.md",
-    "appendix-proofs.md"
+    "equations.md"
   ],
   "figure_manifest": "figures.json",
   "equation_format": "LaTeX ($...$ inline; $$...$$ display)",
@@ -152,10 +151,11 @@
   ],
   "tables": [],
   "conversion_notes": [
-    "The main paper is normalized: hyphenation across line breaks, running headers and page numbers are removed, and the equations are transcribed into standard LaTeX while keeping the paper's own symbols.",
-    "The tridiagonal matrices printed in the PDF are given componentwise, by their diagonal and off-diagonal entries, which is equivalent and easier to implement from.",
-    "The proof appendix (source pages 25-36) is not normalized. appendix-proofs.md keeps the fixed-width PDF text and pairs every page with its rendered image, so a dense intermediate step can be checked against the source instead of being silently rewritten.",
-    "equations.md is a flat index of the model and quote formulas, meant for retrieval rather than reading.",
-    "The backtest section is kept conservative: the paper illustrates the model on one day of France Telecom data and does not disclose the production algorithm, and the conversion does not fill in the gap."
-  ]
+    "document.md is a full transcription of the paper: every section, paragraph, proposition, theorem and proof, the appendix of proofs (source pages 25-36) included, plus all 13 footnotes and the reference list. The authors' first person and the printed numbering are preserved.",
+    "The mathematics was re-keyed as LaTeX and checked against 150 dpi renders of the source pages. The tridiagonal matrices are written out as matrices, as printed.",
+    "The rendered source pages of the appendix are kept under assets/proof-pages/ as a check on the transcription, not as a substitute for it.",
+    "The backtest section is the paper's own: one day of France Telecom data, with the production algorithm explicitly not disclosed.",
+    "equations.md is a flat index of the same equations, for retrieval."
+  ],
+  "conversion_check": "Every pure-prose ten-word window of the source PDF text layer was verified to occur in document.md; the only non-matches are artifacts of running headers, line-break hyphenation, figure axis labels and mathematical notation."
 }
