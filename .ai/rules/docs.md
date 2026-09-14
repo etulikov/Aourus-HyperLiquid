@@ -13,3 +13,11 @@
 - Write for a reader who has not seen the conversation: state what a thing is and why it exists, not what was just changed.
 - Prefer plain declarative sentences over bullet fragments when explaining a decision.
 - Comment the non-obvious - a constraint, a trade-off, a reason. Do not narrate what the code already says.
+
+## The paper library
+
+- **`document.md` is a transcription of the paper, never a summary of it.** The library exists to be the source of truth; a retelling that sits where the paper should sit is worse than no paper, because nothing on its surface says it is a retelling.
+- Transcription means: the author's own voice and person, the section titles and numbering as printed, the citation numbers in the text, the footnotes, the proofs. Remove only what the page format imposed - line-break hyphenation, running headers, page numbers. Keep the source's typos and its ambiguities; where an ambiguity matters for an implementation, mark it in a note rather than resolving it silently.
+- Mathematics is re-keyed as LaTeX and checked against a render of the source page. A PDF text layer scrambles fractions, superscripts and matrix notation exactly where a proof is hardest to read, so the render, not the text layer, is the authority.
+- The paper's summary belongs in the package `README.md`, under "What the paper gives", and its one-line form in the library index. Those are the places a reader knows to read as description.
+- State the check that was actually run in `metadata.json`, so a later reader can tell a verified conversion from an assumed one.
